@@ -2,12 +2,12 @@ from flask import Flask, jsonify
 from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
-db = SQLAlchemy(app)
+#db = SQLAlchemy(app)
 
 
 @app.route('/')
 def index():
-    return 'flask-movies 05'
+    return 'flask-movies 06'
 
 
 application = app
