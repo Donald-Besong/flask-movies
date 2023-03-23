@@ -1,5 +1,5 @@
 from flask import Flask, jsonify
-#from flask_sqlalchemy import SQLAlchemy
+from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
 #db = SQLAlchemy(app)
@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return 'flask-movies 03'
+    return 'flask-movies 04'
 
 
 application = app
