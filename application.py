@@ -3,7 +3,7 @@ from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
 application = app
-db = SQLAlchemy(applications)
+db = SQLAlchemy(application)
 
 
 @app.route('/')
