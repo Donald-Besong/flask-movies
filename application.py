@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return 'flask-movies 02'
+    return 'flask-movies 03'
 
 
 application = app
