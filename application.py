@@ -1,16 +1,11 @@
 from flask import Flask, jsonify
 from flask_sqlalchemy import SQLAlchemy
+from app import create_app
 
-app = Flask(__name__)
-application = app
-db = SQLAlchemy(application)
+application = create_app()
 
-
-@app.route('/')
-def index():
-    return 'flask-movies 07a'
-
+#db = SQLAlchemy(application)
 
 if __name__ == '__main__':
-    application.run()
+    application.run(debug=True)
 
