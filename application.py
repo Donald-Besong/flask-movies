@@ -30,6 +30,6 @@ def api_movies():
     json = [movie.as_dict() for movie in Movie.query.all()]
     return jsonify(json)
 
-
+application = app
 if __name__ == '__main__':
-    app.run()
+    application.run()
